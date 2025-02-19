@@ -8,7 +8,7 @@ import { MealService } from '../../services/meal.service';
 })
 export class MealComponent implements OnInit {
   meals: any[] = [];
-  newMeal = { foodItems: '', calories: 0, protein: 0, carbs: 0 };
+  newMeal: any = { foodItems: '', calories: 0, protein: 0, carbs: 0 };
 
   constructor(private mealService: MealService) {}
 

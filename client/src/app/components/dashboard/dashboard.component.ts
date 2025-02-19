@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MealService } from '../../services/meal.service';
+import { WorkoutService } from '../../services/workout.service';
 
 @Component({
   selector: 'app-dashboard',
