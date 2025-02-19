@@ -1,0 +1,16 @@
+<h2>Meals</h2>
+
+<form (submit)="addMeal()">
+  <input type="text" [(ngModel)]="newMeal.foodItems" placeholder="Food Items (comma separated)" required />
+  <input type="number" [(ngModel)]="newMeal.calories" placeholder="Calories" required />
+  <input type="number" [(ngModel)]="newMeal.protein" placeholder="Protein (g)" required />
+  <input type="number" [(ngModel)]="newMeal.carbs" placeholder="Carbs (g)" required />
+  <button type="submit">Add Meal</button>
+</form>
+
+<ul>
+  <li *ngFor="let meal of meals">
+    {{ meal.foodItems.join(', ') }} - {{ meal.calories }} cal - {{ meal.protein }}g protein - {{ meal.carbs }}g carbs
+    <button (click)="deleteMeal(meal._id)">Delete</button>
+  </li>
+</ul>

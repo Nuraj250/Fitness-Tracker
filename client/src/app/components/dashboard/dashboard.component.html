@@ -1,0 +1,15 @@
+<h2>Dashboard</h2>
+
+<h3>Workouts</h3>
+<ul>
+  <li *ngFor="let workout of workouts">
+    {{ workout.type }} - {{ workout.duration }} mins - {{ workout.caloriesBurned }} cal
+  </li>
+</ul>
+
+<h3>Meals</h3>
+<ul>
+  <li *ngFor="let meal of meals">
+    {{ meal.foodItems.join(', ') }} - {{ meal.calories }} cal
+  </li>
+</ul>

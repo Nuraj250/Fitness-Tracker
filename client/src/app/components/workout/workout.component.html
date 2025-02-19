@@ -1,0 +1,15 @@
+<h2>Workouts</h2>
+
+<form (submit)="addWorkout()">
+  <input type="text" [(ngModel)]="newWorkout.type" placeholder="Workout Type" required />
+  <input type="number" [(ngModel)]="newWorkout.duration" placeholder="Duration (mins)" required />
+  <input type="number" [(ngModel)]="newWorkout.caloriesBurned" placeholder="Calories Burned" required />
+  <button type="submit">Add Workout</button>
+</form>
+
+<ul>
+  <li *ngFor="let workout of workouts">
+    {{ workout.type }} - {{ workout.duration }} mins - {{ workout.caloriesBurned }} cal
+    <button (click)="deleteWorkout(workout._id)">Delete</button>
+  </li>
+</ul>
