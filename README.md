@@ -24,7 +24,7 @@ A RESTful API built with Node.js, Express, and MongoDB for tracking fitness acti
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/fitness-tracker-api.git
+git clone https://github.com/Nuraj250/fitness-tracker-api.git
 cd fitness-tracker-api
 ```
 
